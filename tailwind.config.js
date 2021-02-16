@@ -1,6 +1,11 @@
+const defaultTheme = require('tailwindcss/defaultTheme')
+
 // tailwind.config.js
 module.exports = {
-    purge: [],
+    purge: [
+      './public/**/*.html',
+      './src/**/*.vue'
+    ],
     darkMode: false, // or 'media' or 'class'
     theme: {
       screens: {
@@ -9,14 +14,25 @@ module.exports = {
         lg: '1024px',
         xl: '1280px',
       },
-      fontFamily: {
-        display: ['Gilroy', 'sans-serif'],
-        body: ['Graphik', 'sans-serif'],
+      extend: {
+        height: {
+          '70': '20rem'
+        },
+        colors: {
+          green: {
+            ...defaultTheme.colors.green,
+            '200': '#5F7F4E',
+            '800': '#375541'
+          }
+        }
       },
-      extend: {},
     },
     variants: {
       extend: {},
     },
-    plugins: [],
+    plugins: [
+      require('postcss-import'),
+      require('tailwindcss'),
+      require('autoprefixer'),
+    ],
   }

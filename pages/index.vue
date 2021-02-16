@@ -4,6 +4,7 @@
       <h1 class="title">
         project-green
       </h1>
+      <Card />
     </div>
   </div>
 </template>

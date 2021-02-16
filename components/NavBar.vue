@@ -1,5 +1,5 @@
 <template>
-  <div class="px-4 md:px-16 lg:px-32 mx-auto">
+  <div class="px-4 md:px-8 lg:px-16 mx-auto sticky bg-grey-100">
     <nav class="flex items-center justify-between flex-wrap py-6">
       <div class="flex items-center flex-no-shrink md:mr-6">
         <a>
@@ -20,7 +20,7 @@
         <a class="md:mx-2">
           About Us
         </a>
-        <a class="md:mx-2">
+        <a class="md:mx-2 border-b-4 border-green">
           Order Now
         </a>
       </div>
