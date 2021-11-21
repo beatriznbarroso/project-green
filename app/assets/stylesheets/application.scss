@@ -5,3 +5,10 @@
 // Your CSS partials
 @import "components/index";
 @import "components/utilities";
+
+
+// General styling
+
+a:hover {
+  color: $green-base;
+}
