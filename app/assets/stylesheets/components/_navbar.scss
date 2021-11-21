@@ -2,10 +2,12 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0.5rem 2rem;
+  padding: 0.5rem 8rem;
 }
 
 .nav-link {
   text-decoration: none;
   margin: 0 0.5rem;
+  color: $gray;
+  font-family: $body-font;
 }
