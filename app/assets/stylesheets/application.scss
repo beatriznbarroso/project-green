@@ -8,7 +8,20 @@
 
 
 // General styling
+body {
+  margin: 0;
+  font-family: $body-font;
+}
+
+h1, h2, h3, h4 {
+  font-family: $headers-font;
+}
+
+h1 {
+  font-size: 60px;
+}
 
 a:hover {
   color: $green-base;
+  font-weight: bold;
 }

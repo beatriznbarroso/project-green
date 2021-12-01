@@ -3,6 +3,8 @@
   align-items: center;
   justify-content: space-between;
   padding: 0.5rem 8rem;
+  background-color: $gray-light;
+  backdrop-filter: blur(20px);
 }
 
 .nav-link {
